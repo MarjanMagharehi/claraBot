@@ -38,7 +38,7 @@ function showResponse() {
             counter++;
             setTimeout(changeQuestion, 2000);
         } else if(counter == 2) {
-            output.innerHTML = `Cool, that means you were born in ${2020 - input}`;
+            output.innerHTML = `Cool, that means you were probably born in ${2020 - input}`;
             input = "";
             counter++;
             setTimeout(changeQuestion, 2000);
@@ -48,5 +48,14 @@ function showResponse() {
             counter++;
             setTimeout(changeQuestion, 2000);
         }
+    }
+}
+
+// function to change the question, when a response has been given.
+// if statement to break out of the questions given, and remove the input box
+function changeQuestion() {
+    output.innerHTML = questions[counter];
+    if (counter == 4) { // should I move this if statement to the showResponse function?
+        inputBox.style.display = "none";
     }
 }
