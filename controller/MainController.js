@@ -42,16 +42,24 @@ function showResponse() {
             input = "";
             counter++;
             setTimeout(changeQuestion, 2000);
-        } else if (counter == 3) {
-            output.innerHTML = "Nice " + input + " is a good stack"; 
-            input = "";
+        }  else if (counter == 3) {
+            let Java = "Java";
+            let php = "PHP";
+            if (input == Java) {
+              output.innerHTML = "That's rough";
+            } else if (input == php) {
+              output.innerHTML = `${input}?! Are you mad?`;
+            } else if (input !== Java || php) {
+              output.innerHTML = `Nice! ${input} is a good stack!`;
+            }
+            //   input = "";
+            //   output.innerHTML = `Nice! ${input} is a good stack!`;
             counter++;
             setTimeout(changeQuestion, 2000);
-            }
+          }
            
             }    
         }
-
 
 // function to change the question, when a response has been given.
 // if statement to break out of the questions given, and remove the input box
