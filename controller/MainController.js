@@ -28,28 +28,30 @@ function showResponse() {
 
     }else {
         if(counter == 0) {
-            output.innerHTML = `Hello ${input} nice to meet you`;
+            output.innerHTML = "Hello " + input  + " nice to meet you";
             input = "";
             counter++;
             setTimeout(changeQuestion, 2000);
         } else if(counter == 1) {
-            output.innerHTML = `Wow, ${input} is great`;
+            output.innerHTML = "Wow, " + input + " is great";
             input = "";
             counter++;
             setTimeout(changeQuestion, 2000);
         } else if(counter == 2) {
-            output.innerHTML = `Cool, that means you were probably born in ${2020 - input}`;
+            output.innerHTML = "Cool, that means you were probably born in " + (2020 - input) + ".";
             input = "";
             counter++;
             setTimeout(changeQuestion, 2000);
-        } else if(counter == 3) {
-            output.innerHTML = `Nice! ${input} is a good stack.`;
+        } else if (counter == 3) {
+            output.innerHTML = "Nice " + input + " is a good stack"; 
             input = "";
             counter++;
             setTimeout(changeQuestion, 2000);
+            }
+           
+            }    
         }
-    }
-}
+
 
 // function to change the question, when a response has been given.
 // if statement to break out of the questions given, and remove the input box
