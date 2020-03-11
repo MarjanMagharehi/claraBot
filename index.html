@@ -5,7 +5,8 @@
   <div id="result">
   </div>
   <div class="input">
-  <input type="text" id="answer" placeholder="Enter your response" required onkeyup="if (event.keyCode == 13) {showResponse()}">
+  <input type="text" id="answer" placeholder="Enter your response" required onkeyup="if (event.keyCode == 13) {showResponse()}" onfocus="this.value=''" this.value="">
+  <!-- Addition of onfocus and this.value="" clears the input field on click, after an input has been sent and responded to by Clara-->
   <!-- <input id="inputBox" type="text" onkeyup="if (event.keyCode == 13) {showResponse()}"> -->
 </div>
   <link href="css/main.css" rel="stylesheet"/>
