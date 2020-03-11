@@ -52,8 +52,7 @@ function showResponse() {
             } else if (input !== Java || php) {
               output.innerHTML = `Nice! ${input} is a good stack!`;
             }
-            //   input = "";
-            //   output.innerHTML = `Nice! ${input} is a good stack!`;
+        
             counter++;
             setTimeout(changeQuestion, 2000);
           }

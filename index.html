@@ -1,10 +1,13 @@
 <div class="flex">
-    <div>
-      <h1>Simple JS Bot</h1>
-    </div>
-    <div id="result">
-    </div>
-    <div class="input">
-    <input type="text" id="answer" placeholder="Type your message here" required/>
-    </div>
+  <div>
+    <h1>Clara the chatbot</h1>
   </div>
+  <div id="result">
+  </div>
+  <div class="input">
+  <input type="text" id="answer" placeholder="Enter your response" required onkeyup="if (event.keyCode == 13) {showResponse()}">
+  <!-- <input id="inputBox" type="text" onkeyup="if (event.keyCode == 13) {showResponse()}"> -->
+</div>
+  <link href="css/main.css" rel="stylesheet"/>
+</div>
+<script src="controller/MainController.js"></script>
